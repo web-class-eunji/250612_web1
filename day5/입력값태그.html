@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력값태그</title>
+</head>
+
+<body>
+    <form>
+        <textarea name="개선의견" cols="50" rows="5" placeholder="여러분들의 소중한 의견을 전해주세요">사용자가 직접 삭제할 수 있는 텍스트</textarea>
+    </form>
+
+    <select name="food" id="food" size="2" multiple>
+        <option value="tteokbokki">떡볶이</option>
+        <option value="malatang">마라탕</option>
+        <option value="jajangmyeon">자장면</option>
+        <option value="hamburger">햄버거</option>
+        <option value="beef">소고기</option>
+    </select>
+
+    <form action="/submit">
+        <input type="text">
+        <input type="password">
+        <button type="reset">초기화</button>
+        <button type="submit">제출</button>
+    </form>
+
+    <label for="nametext">이름 : </label>
+    <input type="text" id="nametext">
+
+    <label>
+        이름 : 
+        <input type="text">
+    </label>
+
+    <fieldset disabled>
+        <label for="nametext">이름 : </label>
+        <input type="text" id="nametext">
+        <br>
+        <label for="tel">전화번호 : </label>
+        <input type="text" id="tel">
+    </fieldset>
+
+    <fieldset>
+        <legend>회원정보</legend>
+        <label for="address">주소 : </label>
+        <input type="text" id="nametext">
+        <br>
+        <label for="zip">우편번호 : </label>
+        <input type="text" id="zip">
+    </fieldset>
+</body>
+
+</html>

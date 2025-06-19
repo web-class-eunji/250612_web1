@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table 태그</title>
+    <style>
+        .ma_50 {
+            margin: 50px;
+        }
+
+        td {
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>표 제목</caption>
+        <tr>
+            <th>제목셀1</th>
+            <th>제목셀2</th>
+        </tr>
+        <tr>
+            <td>일반칸1</td>
+            <td>일반칸2</td>
+        </tr>
+    </table>
+
+    <table class="web_table" border="1">
+        <caption>웹과정 커리큘럼</caption>
+        <tr>
+            <th>웹과정 순서</th>
+            <th>학습 내용</th>
+            <th>학습 기간</th>
+        </tr>
+        <tr>
+            <td>웹1</td>
+            <td>HTML</td>
+            <td>1달</td>
+        </tr>
+        <tr>
+            <td>웹2</td>
+            <td>CSS</td>
+            <td>1달</td>
+        </tr>
+        <tr>
+            <td>웹3</td>
+            <td>Javascript 이론</td>
+            <td>1달</td>
+        </tr>
+        <tr>
+            <td>웹4</td>
+            <td>Javascript 심화</td>
+            <td>1달</td>
+        </tr>
+        <tr>
+            <td>UX/UI Design</td>
+            <td>UX이론 및 Figma 학습</td>
+            <td>1달</td>
+        </tr>
+        <tr>
+            <td>웹 포트폴리오</td>
+            <td>개인작품만들기</td>
+            <td>3~4달</td>
+        </tr>
+    </table>
+
+    <table border="1" class="ma_50">
+        <caption>한방병원</caption>
+        <tr>
+            <th colspan="3">환자리스트</th>
+        </tr>
+        <tr>
+            <td>강호동</td>
+            <td>허리통증</td>
+            <td>침치료</td>
+        </tr>
+        <tr>
+            <td>이수근</td>
+            <td>두통</td>
+            <td>진통제 처방</td>
+        </tr>
+        <tr>
+            <td>은지원</td>
+            <td>손목통증</td>
+            <td>물리치료</td>
+        </tr>
+    </table>
+
+    <table class="ma_50" border="1">
+        <caption>해외여행리스트</caption>
+        <tr>
+            <th colspan="4">해외</th>
+        </tr>
+        <tr>
+            <td rowspan="2">더운나라</td>
+            <td>필리핀</td>
+        </tr>
+        <tr>
+            <td>사이판</td>
+        </tr>
+        <tr>
+            <td rowspan="2">추운나라</td>
+            <td>핀란드</td>
+        </tr>
+        <tr>
+            <td>노르웨이</td>
+        </tr>
+    </table>
+</body>
+</html>
