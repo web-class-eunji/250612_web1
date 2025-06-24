@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css문법</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        h1 {
+            color: cadetblue;
+            font-size: 50px;
+        }
+
+        /* 내용
+        아너리ㅏㅁㄴ알
+        ㄴㅁ어라ㅓㄴ마ㅣ럼
+        ㅁ너리ㅏㄴ머이ㅏㅁㄹ
+        */
+
+        #id_select {
+            background: violet;
+        }
+
+        p > .color_change {
+            color: aqua;
+        }
+
+        article > div > .color_change {
+            color: brown;
+        }
+
+        article .color_change {
+            background: blueviolet;
+        }
+
+        .front_end_lang + li {
+            background-color: aqua;
+        }
+
+        .p_tag, #span_tag, h3 {
+            background: yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>클래스 문법 실습</h1>
+    <!--  -->
+    <h2 id="id_select">아이디 선택자</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li class="front_end_lang">Javascript</li>
+        <li>React</li>
+        <li>Vue</li>
+        <li>Vue</li>
+        <li>Vue</li>
+        <li>Vue</li>
+    </ul>
+
+    <p>
+        나는 이렇게 글을 쓰다가
+        <span class="color_change">이 부분만 색을 변경</span>
+        하고싶어요~~
+    </p>
+    <article>
+        <div>
+            나는 이렇게 글을 쓰다가
+            <span class="color_change">이 부분만 색을 변경</span>
+            하고싶어요~~
+        </div>
+    </article>
+    <article>
+        <div>
+            나는 이렇게 글을 쓰다가
+            <span class="color_change">이 부분만 색을 변경</span>
+            하고싶어요~~
+        </div>
+    </article>
+
+    <div>
+        <p class="p_tag">p태그</p>
+        <h3>헤딩3</h3>
+        <span id="span_tag">span태그</span>
+    </div>
+</body>
+
+</html>
