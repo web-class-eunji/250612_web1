@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자식선택자</title>
+    <style>
+        
+        .food > li:nth-child(even){
+            color: blue;
+        }
+
+        .food > li:nth-child(4) {
+            color: red;
+        }
+
+        .food > li:nth-child(odd){
+            color: rgb(28, 244, 28);
+        }
+        </style>
+</head>
+<body>
+    <ul class="food">
+        <li>엽기떡볶이</li>
+        <li>초밥</li>
+        <li>우동</li>
+        <li>짬뽕</li>
+        <li>파스타</li>
+    </ul>
+</body>
+</html>

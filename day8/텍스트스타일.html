@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>텍스트 스타일</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+    <style>
+        /* @font-face {
+            font-family: 'TheTuesdayofYounah';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2506-1@1.0/TheTuesdayofYounah.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            font-family: 'TheTuesdayofYounah';
+        } */
+
+        .gasoek-one-regular {
+            font-family: "Gasoek One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        body {
+            font-family: "Gasoek One", sans-serif;
+        }
+
+
+        h1 {
+            color: violet;
+            font-size: 50px;
+            /* font-size 속성
+            - em : 부모요소의 폰트 크기가 20px이라면 
+            자식요소에게 1em 이라고 지정을 해주면 
+            부모요소를 따라서 16px이 됨
+            2em은 부모요소의 2배값인 32가 됨
+
+            -rem : html의 폰트 크기를 기준으로 상대적인 크기를 설정
+            */
+
+            font-weight: 900;
+        }
+
+        /* 
+        span {
+            display: block;
+        } */
+
+        .text_align_left {
+            text-align: left;
+        }
+
+        .text_align_center {
+            text-align: center;
+        }
+
+        .text_align_right {
+            text-align: right;
+        }
+
+        .vertical_container>p {
+            font-size: 50px;
+        }
+
+        .vertical_1>span {
+            font-size: 16px;
+            vertical-align: top;
+        }
+
+        .vertical_2>span {
+            vertical-align: middle;
+            font-size: 16px;
+        }
+
+        .vertical_3>span {
+            vertical-align: bottom;
+            font-size: 16px;
+        }
+
+        .vertical_container {
+            width: 500px;
+        }
+
+        .vertical_1 {
+            /* text-decoration: underline; */
+            border-bottom: 1px solid #000;
+            font-family: 'TheTuesdayofYounah';
+        }
+
+        .vertical_2 {
+            text-decoration: line-through;
+        }
+
+        .vertical_3 {
+            text-decoration: overline;
+        }
+
+        .line_height1 {
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        .line_height2 {
+            line-height: 500%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>텍스트설정</h1>
+
+    <div class="text_align_left">왼쪽으로 갈거임</div>
+    <div class="text_align_center">가운데로 갈래</div>
+    <div class="text_align_right">나는 오른쪽</div>
+
+    <div>
+        <span class="text_align_left">왼쪽으로 갈거임</span>
+        <span class="text_align_center">가운데로 갈래</span>
+        <span class="text_align_right">나는 오른쪽</span>
+    </div>
+
+    <div class="vertical_container">
+        <p class="vertical_1">
+            서브텍스트 맨 위에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_2">
+            서브텍스트 가운데에 올거임
+            <span>서브텍스트</span>
+        </p>
+        <p class="vertical_3">
+            서브텍스트 아래에 올거임
+            <span>서브텍스트</span>
+        </p>
+    </div>
+
+    <p class="line_height1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit modi ipsa ex sunt
+        suscipit, quas ullam nihil nisi rem, optio consectetur earum cupiditate enim nesciunt accusantium sit, maiores
+        culpa. Officiis!</p>
+    <p class="line_height2">line-height 실습</p>
+    <p class="line_height3">line-height 실습</p>
+</body>
+
+</html>
