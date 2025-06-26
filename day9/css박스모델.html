@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스모델</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 500px;
+            height: 300px;
+            background-color: aqua;
+            /* margin-top: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px; */
+
+            /* margin: 50px; */
+            /* margin: 50px 30px; */
+            margin: 5px 30px 50px 100px;
+            /* 위 - 오른쪽 - 아래 - 왼쪽 */
+
+            margin: 15px 50px 70px;
+            /* 위 - 좌우 - 아래 */
+
+            /* border: 5px solid #000; */
+            /* border: 5px dotted #000; */
+            /* border: 5px dashed #000; */
+
+            border-bottom: 30px double #000;
+            border-top: 5px solid #ff8787;
+            border-left: 25px dotted #12b14f;
+            border-right: 25px dashed #125ab1;
+        }
+
+        .box_size {
+            width: 300px;
+            background: #ff8787;
+            padding: 30px;
+            margin: 30px;
+            border: 30px solid violet;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">css 박스모델 실습</div>
+    <div class="box_size"></div>
+</body>
+</html>

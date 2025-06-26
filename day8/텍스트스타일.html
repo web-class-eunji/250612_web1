@@ -19,7 +19,7 @@
         body {
             font-family: 'TheTuesdayofYounah';
         } */
-
+/* 
         .gasoek-one-regular {
             font-family: "Gasoek One", sans-serif;
             font-weight: 400;
@@ -28,6 +28,15 @@
 
         body {
             font-family: "Gasoek One", sans-serif;
+        } */
+
+        @font-face {
+            font-family: 'like_font';
+            src: url('./BookkMyungjo_Light.ttf');
+        }
+
+        body {
+            font-family: 'like_font';
         }
 
 
@@ -41,7 +50,7 @@
             2em은 부모요소의 2배값인 32가 됨
 
             -rem : html의 폰트 크기를 기준으로 상대적인 크기를 설정
-            */
+            */ 
 
             font-weight: 900;
         }
@@ -108,6 +117,14 @@
         .line_height2 {
             line-height: 500%;
         }
+
+        .letter_spacing_1 {
+            letter-spacing: 10px;
+        }
+
+        .letter_spacing_2 {
+            letter-spacing: -10px;
+        }
     </style>
 </head>
 
@@ -144,6 +161,9 @@
         culpa. Officiis!</p>
     <p class="line_height2">line-height 실습</p>
     <p class="line_height3">line-height 실습</p>
+
+    <p class="letter_spacing_1">자간을 설정합니다.</p>
+    <p class="letter_spacing_2">자간을 설정합니다.</p>
 </body>
 
 </html>
