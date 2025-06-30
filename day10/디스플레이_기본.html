@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디스플레이 기본</title>
+    <style>
+        .wrapper > span,
+        .wrapper > div {
+            border: 1px solid #000;
+            margin: 10px;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .block_1 {
+            display: block;
+        }
+
+        .block_2 {
+            display: block;
+            width: 300px;
+            height: 200px;
+        }
+
+        .inline_2 {
+            width: 500px;
+            height: 500px;
+        }
+
+        .inline_block_1 {
+            display: inline-block;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <!-- inline, block, inline-block, none -->
+    <div class="wrapper">
+        <div class="none">none</div>
+        <!-- block 태그에는 width/height 지정 가능 -->
+        <span class="block_1">inline속성의 태그에 block 속성을 부여</span>
+        <span class="block_2">inline 속성의 태그에 block을 부여하고 width/height를 조절</span>
+
+        <div class="inline_1">block 속성 태그에 inline 속성을 부여</div>
+        <!-- 콘텐츠 영역만큼만 크기를 차지함 -->
+        <span class="inline_2">inline 태그에 크기를 지정하기</span>
+
+        <div class="inline_block_1">인라인 블록이란?</div>
+        <span class="inline_block_2"></span>
+        <!-- inline-block : 내용만큼만 차지하는 inline 속성과 
+            width / height를 사용하여 영역을 설정할 수 있는 block의 속성이 합쳐진것이다.
+        -->
+    </div>
+</body>
+</html>

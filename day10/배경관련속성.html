@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배경관련속성</title>
+    <style>
+        .box_container > div {
+            width: 500px;
+            height: 500px;
+            margin: 50px;
+        }
+
+        .box1 {
+            background-color: rgb(165, 215, 165);
+        }
+
+        .box2 {
+            background: #90bafc;
+        }
+
+        .box3 {
+            background-color: rgba(171, 203, 248, 0.5);
+        }
+
+        .img_box {
+            background: url(./캠핑.jpg);
+            background-attachment: fixed;
+        }
+
+        .img_bg_container > div {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+            /* background-repeat: repeat-y; */
+        }
+
+        .img1 {
+            background: url(./캠핑.jpg)no-repeat;
+            background-size: 150px 50px;
+            background-position: bottom left;
+
+        }
+
+        .img2 {
+            background: url(./캠핑.jpg);
+            background-size: 70%;
+        }
+
+        .img3 {
+            background: url(./캠핑.jpg);
+            background-size: contain;
+        }
+
+        .img4 {
+            background: url(./캠핑.jpg);
+            background-size: cover;
+        }
+
+        .img5 {
+            background: url(./캠핑.jpg);
+            background-size: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box_container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="img_box"></div>
+        <img src="./캠핑.jpg" alt="">
+    </div>
+
+    <div class="img_bg_container">
+        <div class="img1"></div>
+        <div class="img2"></div>
+        <div class="img3"></div>
+        <div class="img4"></div>
+        <div class="img5"></div>
+    </div>
+</body>
+</html>
