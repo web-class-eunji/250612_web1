@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>sticky실습</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .height_section {
+            height: 1000px;
+            /* 충분한 높이 확보 */
+            background-color: #f0f0f0;
+        }
+
+        .sticky_box {
+            display: flex;
+            margin: 0;
+        }
+
+        .text_box {
+            margin: 100px;
+        }
+
+        .text_container {
+            width: 50%;
+        }
+
+        .lorem_text {
+            font-size: 50px;
+        }
+
+        .sticky_box>figure {
+            position: sticky;
+            width: 50%;
+            margin: 0;
+            top: 0;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="height_section">
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+        </div>
+        <article class="sticky_box">
+            <figure>
+                <img class="sticky_img" src="./NewYork.jpg" />
+            </figure>
+            <div class="text_container">
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>Manhattan</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+                <div class="text_box">
+                    <h2>브루클린 </h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        At numquam eveniet maiores nihil quod nesciunt fuga amet, alias laboriosam,
+                        neque nobis similique cupiditate esse necessitatibus natus itaque culpa unde
+                        a!Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            </div>
+        </article>
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia vero modi magni unde, enim impedit deserunt
+            ipsum explicabo odio sint, quos mollitia necessitatibus. Excepturi doloremque obcaecati, quos aperiam sequi
+            eveniet?
+        </div>
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky실습</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .height_section {
+            height: 1000px;
+            background: skyblue;
+        }
+
+        .sticky_box {
+            display: flex;
+        }
+
+        .text_box {
+            margin: 300px;
+        }
+
+        .lorem_text {
+            font-size: 50px;
+        }
+
+        .sticky_box > figure {
+            position: sticky;
+            width: 50%;
+            margin: 0;
+            top: 0;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .text_container {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <section class="height_section">
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi tenetur officiis optio aspernatur maxime atque ut. Veniam laudantium sit dolores deserunt minus voluptatibus optio porro molestiae vitae aspernatur. Impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor autem, magni reiciendis at corporis quasi, adipisci atque modi maiores laborum, blanditiis dolorem ut. Similique quas quos eum aperiam consequatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, atque odio cum quod dignissimos nemo incidunt non hic, facere tempore corrupti minus deserunt laboriosam doloremque animi tenetur suscipit? Sed, earum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non ea in natus. Adipisci, explicabo laborum. Ex esse adipisci incidunt facere atque quae, maiores magni a possimus debitis nesciunt voluptatum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eaque cumque suscipit sapiente natus quod aperiam, ad error laborum non similique optio tempore tempora rem sunt quisquam ipsum quam explicabo.
+        </div>
+
+        <article class="sticky_box">
+            <figure>
+                <img class="sticky_img" src="./NewYork.jpg" alt="뉴욕">
+            </figure>
+            <div class="text_container">
+                <div class="text_box">
+                    <h2>맨해튼(Manhattan)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates facilis, ab provident obcaecati molestiae modi nemo corporis, eveniet nostrum non et est quas. Itaque omnis dignissimos neque nam nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti quisquam cumque vel nihil quod maiores nostrum veritatis recusandae. Minima, nisi sunt commodi voluptatibus cupiditate vel autem modi accusantium optio.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>브롱크스(Bronx)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates facilis, ab provident obcaecati molestiae modi nemo corporis, eveniet nostrum non et est quas. Itaque omnis dignissimos neque nam nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti quisquam cumque vel nihil quod maiores nostrum veritatis recusandae. Minima, nisi sunt commodi voluptatibus cupiditate vel autem modi accusantium optio.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>브루클린(Brooklyn)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates facilis, ab provident obcaecati molestiae modi nemo corporis, eveniet nostrum non et est quas. Itaque omnis dignissimos neque nam nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti quisquam cumque vel nihil quod maiores nostrum veritatis recusandae. Minima, nisi sunt commodi voluptatibus cupiditate vel autem modi accusantium optio.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>퀸스(Queens)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates facilis, ab provident obcaecati molestiae modi nemo corporis, eveniet nostrum non et est quas. Itaque omnis dignissimos neque nam nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti quisquam cumque vel nihil quod maiores nostrum veritatis recusandae. Minima, nisi sunt commodi voluptatibus cupiditate vel autem modi accusantium optio.
+                    </p>
+                </div>
+                <div class="text_box">
+                    <h2>스태튼 아일랜드(Staten Island)</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptates facilis, ab provident obcaecati molestiae modi nemo corporis, eveniet nostrum non et est quas. Itaque omnis dignissimos neque nam nisi?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deleniti quisquam cumque vel nihil quod maiores nostrum veritatis recusandae. Minima, nisi sunt commodi voluptatibus cupiditate vel autem modi accusantium optio.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+        <div class="lorem_text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi tenetur officiis optio aspernatur maxime atque ut. Veniam laudantium sit dolores deserunt minus voluptatibus optio porro molestiae vitae aspernatur. Impedit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor autem, magni reiciendis at corporis quasi, adipisci atque modi maiores laborum, blanditiis dolorem ut. Similique quas quos eum aperiam consequatur?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, atque odio cum quod dignissimos nemo incidunt non hic, facere tempore corrupti minus deserunt laboriosam doloremque animi tenetur suscipit? Sed, earum!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores non ea in natus. Adipisci, explicabo laborum. Ex esse adipisci incidunt facere atque quae, maiores magni a possimus debitis nesciunt voluptatum.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam eaque cumque suscipit sapiente natus quod aperiam, ad error laborum non similique optio tempore tempora rem sunt quisquam ipsum quam explicabo.
+        </div>
+
+    </section>
+</body>
+</html>
