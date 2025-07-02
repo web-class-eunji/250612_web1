@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align_items</title>
+    <style>
+        /* .align_container {
+            display: flex;
+        }  */
+        
+        article {
+            display: flex;
+            border: 1px solid #000;
+            margin: 10px;
+            height: 800px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: cornflowerblue;
+            margin: 5px;
+        }
+
+        .flex-start {
+            align-items: flex-start;
+        }
+
+        .flex-end {
+            align-items: flex-end;
+        }
+
+        .center {
+            align-items: center;
+        }
+
+        .flex-baseline {
+            align-items: baseline;
+        }
+
+        .baseline {
+            font-size: 100px;
+            width: 500px;
+            height: 500px;            
+        }
+
+        .baseline + div {
+            font-size: 24px;
+        }
+
+        .stretch {
+            align-items: stretch;
+        }
+
+        .stretch > div {
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="align_container">
+        <article class="flex-start">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+        <article class="flex-end">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+        <article class="center">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+        <article class="flex-baseline">
+            <div>item</div>
+            <div class="baseline">item</div>
+            <div>item</div>
+        </article>
+        <article class="stretch">
+            <div>item</div>
+            <div>item</div>
+            <div>item</div>
+        </article>
+    </section>
+</body>
+</html>
