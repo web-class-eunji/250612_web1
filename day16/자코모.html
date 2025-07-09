@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자코모</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            display: flex;
+            width: 100%;
+        }
+
+        figure {
+            width: 100%;
+            height: 800px;
+            position: relative;
+            overflow: hidden;
+            /* 피규어 영역 이상을 넘어가면 보이지 않게 처리 */
+        }
+
+        img {
+            width: 100%;
+            height: 800px;
+            transition: 0.7s;
+        }
+
+        img:hover {
+            transform: scale(1.1);
+        }
+
+        .text_box {
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        h2 {
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <figure>
+            <img src="./45fef72c5892e8b416c5ae10f4715488.jpg" alt="">
+            <div class="text_box">
+                <h2>Leather</h2>
+                <p>프리미엄가죽</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="./a9bc4f4123db776c344c92658c9689ce.jpg" alt="">
+            <div class="text_box">
+                <h2>Fabric</h2>
+                <p>기능성 페브릭</p>
+            </div>
+        </figure>
+        <figure>
+            <img src="./c2ae3b0bc253e0a835f05ee8eb9ab4b1.jpg" alt="">
+            <div class="text_box">
+                <h2>Material</h2>
+                <p>올바른 내장재</p>
+            </div>
+        </figure>
+    </section>
+</body>
+</html>
