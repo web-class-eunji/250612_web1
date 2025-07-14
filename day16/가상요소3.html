@@ -4,37 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>가상요소3</title>
+    <style>
+        body {
+            background-color: cadetblue;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li > a {
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            width: 200px;
+            height: 150px;
+            display: inline-block;
+            text-align: center;
+            margin: 24px;
+        }
+
+        span {
+            display: block;
+        }
+
+        a span:first-child {
+            font-size: 26px;
+        }
+
+        a span:last-child {
+            color: rgb(34, 95, 83);
+            font-size: 18px;
+            opacity: 0;
+            transition: 0.3s;
+        }
+
+        a:hover span:last-child {
+            opacity: 1;
+            transform: translateY(25px);
+        }
+
+        a span:last-child::after {
+            content: "";
+            width: 100%;
+            background-color: #fff;
+            height: 1px;
+            display: block;
+            margin-top: 30px;
+        }
+
+        a::before {
+            content: "";
+            width: 100%;
+            height: 1px;
+            background-color: #fff;
+            display: block;
+            margin-bottom: 16px;
+            opacity: 0.5;
+            transition: 0.3s;
+        }
+
+        a:hover::before {
+            height: 5px;
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
     <ul>
         <li>
             <a href="#">
-                <span></span>
-                <span></span>
+                <span>HTML</span>
+                <span>MARK UP</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <span></span>
-                <span></span>
+                <span>CSS</span>
+                <span>STYLE</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <span></span>
-                <span></span>
+                <span>JAVASCRIPT</span>
+                <span>CODING</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <span></span>
-                <span></span>
+                <span>UXUI DESIGN</span>
+                <span>DESIGN</span>
             </a>
         </li>
         <li>
             <a href="#">
-                <span></span>
-                <span></span>
+                <span>PORTFOLIO</span>
+                <span>PROJECT</span>
             </a>
         </li>
     </ul>
